@@ -103,7 +103,7 @@ const helpers = {
 };
 
 function computeSpans(mapConsumer, generatedJs) {
-  var lines = generatedJs.split(/(\r?\n)/);
+  var lines = generatedJs.split(/\r?\n/);
   var spans = [];
   var lastSource = false;  // not a string, not null.
   for (var line = 1; line <= lines.length; line++) {
